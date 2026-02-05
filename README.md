@@ -5,12 +5,10 @@ A simple, responsive calculator built with HTML, CSS (Bootstrap 5), and JavaScri
 ## Features
 
 - Basic arithmetic operations: addition (+), subtraction (-), multiplication (×), division (÷)
-- Percentage calculations
 - Clear (C) button to reset the calculator
 - Backspace (←) button to delete the last character
 - Error handling for invalid expressions
 - Responsive design that works on different screen sizes
-- Modern UI with rounded edges and shadows
 
 ## Technologies Used
 
@@ -28,23 +26,6 @@ A simple, responsive calculator built with HTML, CSS (Bootstrap 5), and JavaScri
 4. Click `C` to clear the display
 5. Click `←` to delete the last character
 
-## Percentage Calculations
-
-To calculate percentages (e.g., 10% of 3):
-- Enter: `10` → `%` → `3` → `=`
-- Result: `0.3`
-
-## File Structure
-
-```
-basic-calculator/
-├── index.html              # Main HTML file
-├── script.js               # Calculator logic
-├── styles.css              # Custom styles
-├── bootstrap-5.3.8-dist/   # Bootstrap framework
-│   ├── css/
-│   └── js/
-└── README.md               # This file
 ```
 
 ## Installation
