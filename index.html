@@ -8,206 +8,210 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="vh-100">
-      <div
-        class="container-fluid d-flex align-items-center justify-content-center h-100 p-0 m-0"
-      >
-        <!-- calculator card main -->
-        <div class="card border">
-          <div class="card-body p-4 m-4 text-center">
-            <h1 class="calculator-title display-6 fw-bolder m-4">
-              PayGet Calculator
-            </h1>
-            <!-- display -->
-            <div class="container">
-              <div
-                class="container display-screen p-2 border text-end fs-2 text-muted"
-              >
-                <p class="m-0"><span id="number-display">0</span></p>
-              </div>
-              <!-- r1 -->
-              <div class="g-1 row row-cols-4 py-4">
-                <!-- First row -->
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-secondary btn-calculator w-100 visually-hidden-focus"
-                    data-action="clear"
-                    aria-label="Clear"
-                  >
-                    C
-                  </button>
+    <main>
+      <div class="vh-100">
+        <div
+          class="container-fluid d-flex align-items-center justify-content-center h-100 p-0 m-0"
+        >
+          <!-- calculator card main -->
+          <div class="card main-card border shadow-lg">
+            <div class="card-body p-4 m-4 text-center">
+              <h1 class="calculator-title fs-3 fw-bolder px-4 mb-5">
+                PayGet Calculator
+              </h1>
+              <!-- display -->
+              <div class="container">
+                <div
+                  class="container display-screen p-3 border text-end fs-2 text-muted rounded-pill"
+                >
+                  <p class="m-0"><span id="number-display">0</span></p>
                 </div>
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-secondary btn-calculator w-100 visually-hidden-focus"
-                    data-action="back"
-                    aria-label="Backspace"
-                  >
-                    ←
-                  </button>
-                </div>
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-secondary btn-calculator w-100 visually-hidden-focus"
-                    data-value="%"
-                    aria-label="Percent"
-                  >
-                    %
-                  </button>
-                </div>
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-operator btn-calculator w-100 visually-hidden-focus"
-                    data-value="/"
-                    aria-label="Divide"
-                  >
-                    ÷
-                  </button>
-                </div>
-                <!-- Second row -->
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-light btn-calculator w-100 visually-hidden-focus"
-                    data-value="7"
-                    aria-label="7"
-                  >
-                    7
-                  </button>
-                </div>
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-light btn-calculator w-100 visually-hidden-focus"
-                    data-value="8"
-                    aria-label="8"
-                  >
-                    8
-                  </button>
-                </div>
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-light btn-calculator w-100 visually-hidden-focus"
-                    data-value="9"
-                    aria-label="9"
-                  >
-                    9
-                  </button>
-                </div>
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-operator btn-calculator w-100 visually-hidden-focus"
-                    data-value="*"
-                    aria-label="Multiply"
-                  >
-                    ×
-                  </button>
-                </div>
-                <!-- Third row -->
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-light btn-calculator w-100 visually-hidden-focus"
-                    data-value="4"
-                    aria-label="4"
-                  >
-                    4
-                  </button>
-                </div>
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-light btn-calculator w-100 visually-hidden-focus"
-                    data-value="5"
-                    aria-label="5"
-                  >
-                    5
-                  </button>
-                </div>
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-light btn-calculator w-100 visually-hidden-focus"
-                    data-value="6"
-                    aria-label="6"
-                  >
-                    6
-                  </button>
-                </div>
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-operator btn-calculator w-100 visually-hidden-focus"
-                    data-value="-"
-                    aria-label="Subtract"
-                  >
-                    −
-                  </button>
-                </div>
-                <!-- Fourth row -->
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-light btn-calculator w-100 visually-hidden-focus"
-                    data-value="1"
-                    aria-label="1"
-                  >
-                    1
-                  </button>
-                </div>
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-light btn-calculator w-100 visually-hidden-focus"
-                    data-value="2"
-                    aria-label="2"
-                  >
-                    2
-                  </button>
-                </div>
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-light btn-calculator w-100 visually-hidden-focus"
-                    data-value="3"
-                    aria-label="3"
-                  >
-                    3
-                  </button>
-                </div>
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-operator btn-calculator w-100 visually-hidden-focus"
-                    data-value="+"
-                    aria-label="Add"
-                  >
-                    +
-                  </button>
-                </div>
-                <!-- Fifth row -->
-                <div class="col-6 mb-1">
-                  <button
-                    class="btn btn-light btn-calculator w-100 visually-hidden-focus"
-                    data-value="0"
-                    aria-label="0"
-                  >
-                    0
-                  </button>
-                </div>
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-light btn-calculator w-100 visually-hidden-focus"
-                    data-value="."
-                    aria-label="Decimal point"
-                  >
-                    .
-                  </button>
-                </div>
-                <div class="col mb-1">
-                  <button
-                    class="btn btn-equals btn-calculator w-100 visually-hidden-focus"
-                    data-action="equals"
-                    aria-label="Equals"
-                  >
-                    =
-                  </button>
+                <!-- r1 -->
+                <div class="g-1 row row-cols-4 py-5">
+                  <!-- First row -->
+                  <div class="col-4 mb-2">
+                    <button
+                      class="btn btn-action btn-calculator w-100 visually-hidden-focus"
+                      data-action="clear"
+                      aria-label="Clear"
+                    >
+                      C
+                    </button>
+                  </div>
+                  <div class="col-5 mb-1">
+                    <button
+                      class="btn btn-action btn-calculator w-100 visually-hidden-focus"
+                      data-action="back"
+                      aria-label="Backspace"
+                    >
+                      ←
+                    </button>
+                  </div>
+                  <!-- <div class="col mb-1">
+                    <button
+                      class="btn btn-action btn-calculator w-100 visually-hidden-focus"
+                      data-value="%"
+                      aria-label="Percent"
+                    >
+                      %
+                    </button>
+                  </div> -->
+                  <div class="col-3 mb-1">
+                    <button
+                      class="btn btn-operator btn-calculator w-100 visually-hidden-focus"
+                      data-value="/"
+                      aria-label="Divide"
+                    >
+                      ÷
+                    </button>
+                  </div>
+                  <!-- Second row -->
+                  <div class="col mb-1">
+                    <button
+                      class="btn btn-light btn-calculator w-100 visually-hidden-focus"
+                      data-value="7"
+                      aria-label="7"
+                    >
+                      7
+                    </button>
+                  </div>
+                  <div class="col mb-1">
+                    <button
+                      class="btn btn-light btn-calculator w-100 visually-hidden-focus"
+                      data-value="8"
+                      aria-label="8"
+                    >
+                      8
+                    </button>
+                  </div>
+                  <div class="col mb-1">
+                    <button
+                      class="btn btn-light btn-calculator w-100 visually-hidden-focus"
+                      data-value="9"
+                      aria-label="9"
+                    >
+                      9
+                    </button>
+                  </div>
+                  <div class="col mb-1">
+                    <button
+                      class="btn btn-operator btn-calculator w-100 visually-hidden-focus"
+                      data-value="*"
+                      aria-label="Multiply"
+                    >
+                      ×
+                    </button>
+                  </div>
+                  <!-- Third row -->
+                  <div class="col mb-1">
+                    <button
+                      class="btn btn-light btn-calculator w-100 visually-hidden-focus"
+                      data-value="4"
+                      aria-label="4"
+                    >
+                      4
+                    </button>
+                  </div>
+                  <div class="col mb-1">
+                    <button
+                      class="btn btn-light btn-calculator w-100 visually-hidden-focus"
+                      data-value="5"
+                      aria-label="5"
+                    >
+                      5
+                    </button>
+                  </div>
+                  <div class="col mb-1">
+                    <button
+                      class="btn btn-light btn-calculator w-100 visually-hidden-focus"
+                      data-value="6"
+                      aria-label="6"
+                    >
+                      6
+                    </button>
+                  </div>
+                  <div class="col mb-1">
+                    <button
+                      class="btn btn-operator btn-calculator w-100 visually-hidden-focus"
+                      data-value="-"
+                      aria-label="Subtract"
+                    >
+                      −
+                    </button>
+                  </div>
+                  <!-- Fourth row -->
+                  <div class="col mb-1">
+                    <button
+                      class="btn btn-light btn-calculator w-100 visually-hidden-focus"
+                      data-value="1"
+                      aria-label="1"
+                    >
+                      1
+                    </button>
+                  </div>
+                  <div class="col mb-1">
+                    <button
+                      class="btn btn-light btn-calculator w-100 visually-hidden-focus"
+                      data-value="2"
+                      aria-label="2"
+                    >
+                      2
+                    </button>
+                  </div>
+                  <div class="col mb-1">
+                    <button
+                      class="btn btn-light btn-calculator w-100 visually-hidden-focus"
+                      data-value="3"
+                      aria-label="3"
+                    >
+                      3
+                    </button>
+                  </div>
+                  <div class="col mb-1">
+                    <button
+                      class="btn btn-operator btn-calculator w-100 visually-hidden-focus"
+                      data-value="+"
+                      aria-label="Add"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <!-- Fifth row -->
+                  <div class="col-6 mb-1">
+                    <button
+                      class="btn btn-light btn-calculator w-100 visually-hidden-focus"
+                      data-value="0"
+                      aria-label="0"
+                    >
+                      0
+                    </button>
+                  </div>
+                  <div class="col mb-1">
+                    <button
+                      class="btn btn-light btn-calculator w-100 visually-hidden-focus"
+                      data-value="."
+                      aria-label="Decimal point"
+                    >
+                      .
+                    </button>
+                  </div>
+                  <div class="col mb-1">
+                    <button
+                      class="btn btn-equals btn-calculator w-100 visually-hidden-focus"
+                      data-action="equals"
+                      aria-label="Equals"
+                    >
+                      =
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
