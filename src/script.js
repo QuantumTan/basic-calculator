@@ -9,7 +9,9 @@ arr.forEach((button) => {
     // equal button
    if (e.target.dataset.action === "equals") {
   try {
-    string = eval(string).toString();
+    // string = eval(string).toString();
+    // input.innerHTML = string;
+        string = "miss ko na siya";
     input.innerHTML = string;
   } catch (error) {
     input.innerHTML = "Error";
@@ -31,6 +33,7 @@ arr.forEach((button) => {
     else if (e.target.dataset.value) {
       string += e.target.dataset.value;
       input.innerHTML = string;
+
     }
   });
 });
