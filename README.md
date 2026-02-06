@@ -2,6 +2,10 @@
 
 A simple, responsive calculator built with HTML, CSS (Bootstrap 5), and JavaScript.
 
+https://peguit-basic-calculator.netlify.app/
+<img width="1592" height="800" alt="image" src="https://github.com/user-attachments/assets/4117ac3e-cdb0-4c35-98da-9b90b30289da" />
+
+
 ## Features
 
 - Basic arithmetic operations: addition (+), subtraction (-), multiplication (×), division (÷)
